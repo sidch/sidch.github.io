@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Probabilistic Reasoning for Assembly-Based 3D Modeling</title>
+<link rel="stylesheet" type="text/css" href="../../sidch.css">
+
+</head>
+
+<body>
+
+<div id="Content" align=center style="max-width: 740px;">
+
+<img src="images/frieze.jpg" width="100%">
+
+<h1>Probabilistic Reasoning for Assembly-Based 3D Modeling</h1>
+<br>
+<a href=http://www.cs.princeton.edu/~sidch><font color=blue>Siddhartha&nbsp;Chaudhuri</font></a>,
+<a href=http://people.cs.umass.edu/~kalo><font color=blue>Evangelos&nbsp;Kalogerakis</font></a>,
+<a href=http://cs.stanford.edu/~guibas><font color=blue>Leonidas&nbsp;Guibas</font></a>, and
+<a href=http://cs.stanford.edu/~vladlen><font color=blue>Vladlen&nbsp;Koltun</font></a>
+<br><br>
+
+<em>ACM Transactions on Graphics 30(4) (Proc. SIGGRAPH), 2011</em> <a href=siggraph2011.bib><font color=blue>[BibTeX]</font></a><br>
+<br>
+<b>Preprint: <a href=../../docs/siggraph2011_assembly.pdf><font color=blue>[PDF]</font></a></b><br>
+
+<br>
+<div align=justify>
+Providing easy-to-use tools for the creation of detailed three-dimensional content is a key challenge for computer graphics research. <em>Assembly-based modeling</em> is a promising approach to making 3D modeling widely accessible. The advantage of assembly-based modeling is that users need not create new geometry from scratch; modeling reduces to selection and placement of components extracted from a database.
+
+<br><br>
+A key challenge in assembly-based 3D modeling is the identification of relevant components to be presented to the user. In this paper, we introduce a probabilistic reasoning approach to assembly-based modeling. Our approach studies a model library to learn how shapes are put together, and uses this knowledge to suggest semantically and stylistically relevant components at each stage of the modeling process.
+
+<br><br>
+To facilitate rapid creation of detailed 3D models by novices, we have developed a prototype assembly-based modeling tool that allows shapes to be composed via drag-and-drop. Suggested components are shown by category, with more relevant suggestions appearing first. When a component is dragged in, it is snapped and glued to the rest of the model for easy assembly. In our experiments, users with little or no modeling experience became proficient with the tool after only a few minutes of training and constructed detailed, attractive 3D models.
+</div>
+
+<br>
+<h1>Video</h1>
+
+<br>
+A high-quality version of the video can be downloaded for offline viewing <a href="https://www.dropbox.com/scl/fi/w4we5d43mhw3dvd2ue7ce/siggraph2011_assembly.mov?rlkey=nhu4uji29s7kazsoe0k4k5gsv&st=h6a61d3x&dl=1"><font color=blue>here</font></a> (QuickTime, 44&nbsp;MB).
+
+<br><br>
+<div class="auto-resizable-iframe">
+  <div>
+  <iframe src="https://www.youtube.com/embed/7Abki79WIOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<br><br>
+<h1>Evaluation</h1>
+
+<br>
+<div align=justify>
+To evaluate the relevance of shape components suggested by our probabilistic model, we recruited 42 volunteers. The volunteers were assigned two tasks: build a toy, and build a creature (see the paper for details). Three conditions were tested for each task: (a) with dynamic suggestions based on the probabilistic model, (b) with dynamic suggestions based on the geometric approach of <a href="http://dx.doi.org/10.1145/1882261.1866205"><font color=blue>[Chaudhuri and Koltun 2010]</font></a> and (c) with a static ordering of components based on frequency of occurrence in the source database. In all, 141 modeling sessions were completed using our prototype assembly-based 3D modeling application, shown in the following screenshot (click to enlarge). Most participants had little or no prior experience with 3D modeling, and each was given only a 5-10 minute orientation with the application.
+</div>
+
+<br><br>
+<a href=images/interface.png><img src="images/interface_small.jpg" width="100%"></a>
+
+<br><br><br>
+<div align=justify>
+The plots below show, for the creature task, the cumulative distribution of the ranks of categories from which components were chosen (left), and the cumulative distribution of the ranks of the chosen components within their respective categories (right). The results demonstrate that the probabilistic model (red) significantly outperforms the other approaches.
+</div>
+
+<br><br>
+<img src="images/eval_creature.png" width="100%">
+
+<br><br>
+<div align=justify>
+Models created with our approach are quite different from models in the source database. As the plots below show, a large number of components (left) from several source models (right) were used for each user-created shape (click to enlarge images).
+</div>
+
+<br><br>
+<a href=images/eval_compsrc_small.png><img src="images/eval_compsrc_small.png" width="100%"></a>
+
+<br><br>
+<div align=justify>
+The individual components and modeling times for models created by participants are shown below (click on image to enlarge).
+</div>
+
+<br>
+<a href=images/components.jpg><img src=images/components_small.jpg width="100%"></a>
+
+<br><br><br><br>
+</div>
+
+</body>
+
+</html>
