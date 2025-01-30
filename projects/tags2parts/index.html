@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title> Tags2Parts: Discovering Semantic Regions from Shape Tags</title>
+<link rel="stylesheet" type="text/css" href="../../sidch.css">
+
+</head>
+
+<body>
+
+<div id="Content" align=center style="max-width: 740px;">
+
+<br>
+<img src="images/teaser.jpg" width="100%">
+
+<br><br>
+<h1> Tags2Parts: Discovering Semantic Regions from Shape Tags</h1>
+<br>
+Sanjeev&nbsp;Muralikrishnan,
+<a href=http://www.vovakim.com/><font color=blue>Vladimir&nbsp;G.&nbsp;Kim</font></a>, and
+<a href=../../index.html><font color=blue>Siddhartha&nbsp;Chaudhuri</font></a>
+<br><br>
+
+<em>Proc. CVPR, 2018</em> <a href=cvpr2018_tags2parts.bib><font color=blue>[BibTeX]</font></a><br>
+
+<br>
+<b>Preprint: <a href=../../docs/cvpr2018_tags2parts.pdf><font color=blue>[PDF]</font></a>&nbsp;&nbsp;<a href=https://arxiv.org/abs/1708.06673><font color=blue>[arXiv]</font></a></b><br><br>
+<b>Code and Data: <a href=https://github.com/sanjeevmk/Tags2Parts>GitHub</a></b><br><br>
+
+<br>
+<p align=justify>We propose a novel method for discovering shape regions that strongly correlate with user-prescribed tags. For example, given a collection of chairs tagged as either "has armrest" or "lacks armrest", our system correctly highlights the armrest regions as the main distinctive parts between the two chair types. To obtain point-wise predictions from shape-wise tags we develop a novel neural network architecture that is trained with tag classification loss, but is designed to rely on segmentation to predict the tag. Our network is inspired by U-Net, but we replicate shallow U structures several times with new skip connections and pooling layers, and call the resulting architecture "WU-Net". We test our method on segmentation benchmarks and show that even with weak supervision of whole shape tags, our method can infer meaningful semantic regions, without ever observing shape segmentations. Further, once trained, the model can process shapes for which the tag is entirely unknown. As a bonus, our architecture is directly operational under full supervision and performs strongly on standard benchmarks. We validate our method through experiments with many variant architectures and prior baselines, and demonstrate several applications.</p>
+
+<br>
+<img src="images/network.jpg" width="100%">
+<br><br>
+<img src="images/wu_vis.jpg" width="100%">
+
+<br><br><br>
+
+</body>
+
+</html>

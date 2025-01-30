@@ -1,0 +1,592 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Siddhartha Chaudhuri's Homepage</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="sidch.css">
+
+<script type="text/javascript">
+// From Connelly Barnes' page
+function show_hide()
+{
+  var x = document.getElementById('preprints_div');
+  if (x.style.display === 'none')
+    x.style.display = 'block';
+  else
+    x.style.display = 'none';
+}
+function show_func()
+{
+  document.getElementById('preprints_msg').outerHTML = "<a id='preprints_msg' href='javascript:hide_func()'>Click here to hide additional preprints</a>";
+  show_hide();
+}
+function hide_func()
+{
+  document.getElementById('preprints_msg').outerHTML = "<a id='preprints_msg' href='javascript:show_func()'>Click here to show additional preprints</a>";
+  show_hide();
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- ====== Title ====== -->
+
+<!--div id="Header">
+<h1 class="title">Siddhartha Chaudhuri's Homepage
+</div-->
+
+<div id="Content">
+
+<div class=container-fluid style="width: 100%">
+<div class=row>
+
+<div class="col-sm-3">
+<br>
+<img src=images/mugshot3.jpg height=250px>
+</div>
+
+<div class="col-sm-5">
+<br>
+<h1>Siddhartha Chaudhuri</h1>
+<br>
+<p>Senior Research Scientist<br>
+Creative Intelligence Lab<br>
+Adobe Research, New York</p>
+<p><i>Email:</i> sidch [AT] adobe [DOT] com</p>
+</div>
+
+</div>
+</div>
+
+<br>
+<div id="Intro">
+
+<p>I'm a computer scientist, specializing in digital geometry processing and the use of machine learning for data-driven solutions to geometric problems. My research focuses on richer tools for <b>geometric design</b>, particularly by novice and casual users, and on related problems in <b>shape synthesis and editing</b>. This research is driven by a more abstract interest in <b>shape understanding</b> at both the structural and semantic levels: Why is a model of a chair not one of a chicken? What distinguishes a well-designed chair from a badly designed one? How can one build a better chair?</p>
+
+Some major themes in my work have been <a href=https://www.youtube.com/live/Pi7W6XrFtMs?feature=shared&t=902>assembly-based (compositional) shape synthesis</a>, <a href=https://www.youtube.com/live/lStGrpg-Knc?feature=shared>shape detailization</a>, weakly-supervised and multi-view shape analysis, and attribute-driven shape design. Of late, I am also particularly interested in 2D vector graphics and image vectorization. My research combines ideas from graphics, vision, machine learning and HCI, and I have published in all of these areas. I have also significantly contributed to real-world software, including <a href=https://www.adobe.com/products/illustrator.html>Adobe Illustrator</a>, <a href=https://projectneo.adobe.com>Project Neo</a>, <a href=https://www.adobe.com/products/substance3d/apps/modeler.html>Adobe Substance 3D Modeler</a>, and the late <a href=https://en.wikipedia.org/wiki/Adobe_Fuse_CC>Adobe (formerly Mixamo) Fuse</a> (for which I was the architect and chief developer).</p>
+
+<p>I'm a Senior Research Scientist at <a href=https://research.adobe.com/>Adobe Research</a>, New York. I received the Indian National Science Academy's Medal for Young Scientists, 2022, while at Adobe Research, Bangalore. I was an Assistant Professor (full time 2015-17, on leave 2017-22) in the department of <a href=http://www.cse.iitb.ac.in>Computer Science and Engineering</a> at <a href=http://www.iitb.ac.in>IIT Bombay</a>, where I held an Institute Chair and received the Early Research Achiever Award. Earlier, I spent a year as a lecturer at <a href=http://www.cornell.edu>Cornell University</a>. Even earlier, I was a postdoc at <a href=http://www.cs.princeton.edu>Princeton University</a>, working with <a href=http://www.cs.princeton.edu/~funk>Tom Funkhouser</a>. I received my <a href=http://purl.stanford.edu/vq766tr8762>PhD</a> from <a href=http://cs.stanford.edu>Stanford University</a> in 2011, supervised by <a href=http://vladlen.info>Vladlen Koltun</a>.</p>
+
+<p>[<a href=docs/sid_cv.pdf>CV</a>]&nbsp;&nbsp;[<a href=https://scholar.google.com/citations?user=QMc-grEAAAAJ>Google Scholar</a>]</p>
+
+<hr>
+<p><b>Note:</b> Adobe Research offers summer internships to outstanding students. Please follow the <a href=https://research.adobe.com/internships/>official procedure</a>, <font color=red><b>don't send me email.</b></font> If you're interested in working with me, mention my name in your application. I <u>do not</u> take on students without a strong background in graphics/vision/machine learning (typically at least 2 out of 3).</p>
+<hr>
+
+</div>
+
+<h1>News</h1>
+
+<ul>
+
+<li>
+  <i><font color="#888888">[Jan 2025]</font></i>&nbsp;&nbsp; Our <a href=#tpami2025_metric>paper</a> on unsupervised, temporally-consistent reconstruction of a time-varying shape (e.g. point clouds from motion-capture), expanding and updating our <a href=#iccv2021_metric>ICCV 2021 paper</a>, was accepted to <a href=https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34>TPAMI</a> after spending 3 years (!) in a single review cycle. Fortunately, it is not yet out-of-date :).
+</li>
+
+<li>
+  <i><font color="#888888">[Jul 2024]</font></i>&nbsp;&nbsp; Two papers accepted to <a href=https://eccv2024.ecva.net/Conferences/2024/>ECCV 2024</a>, one on <a href=#eccv2024_decollage>local detailization of 3D shapes</a>, and the other on <a href=#eccv2024_trj>rig-free motion transfer</a>.
+</li>
+
+<li>
+  <i><font color="#888888">[May 2024]</font></i>&nbsp;&nbsp; Our <a href=#icml2024>paper</a> on a neurosymbolic system for visual program inference, with both generative and discriminative applications, was accepted to <a href=https://icml.cc/Conferences/2024/>ICML 2024</a>.
+</li>
+
+<li>
+  <i><font color="#888888">[Apr 2024]</font></i>&nbsp;&nbsp; Our <a href=#siggraph2024>paper</a> on generating 3D shapes via intermediate synthesis of shape skeletons was accepted to <a href=https://s2024.siggraph.org/>SIGGRAPH 2024</a> (conference track).
+</li>
+
+<li>
+  <i><font color="#888888">[Feb 2024]</font></i>&nbsp;&nbsp; I will serve as an <a href=https://www.computer.org/csdl/journal/tg/about/107398>Associate Editor</a> of <a href=https://www.computer.org/csdl/journal/tg>IEEE Trans. Visualization and Computer Graphics (TVCG)</a>.
+</li>
+
+<li>
+  <i><font color="#888888">[Sep 2023]</font></i>&nbsp;&nbsp; I will serve on the <a href=https://s2024.siggraph.org>SIGGRAPH 2024</a> Technical Papers Committee and the <a href=https://eg2024.cyens.org.cy/>Eurographics 2024</a> International Program Committee.
+</li>
+
+<li>
+  <i><font color="#888888">[Aug 2023]</font></i>&nbsp;&nbsp; Our <a href=#sigasia2023>paper</a> on leveraging generative models to explore high-quality mesh deformations was accepted to <a href=https://asia.siggraph.org/2023/>SIGGRAPH Asia 2023</a> (conference track).
+</li>
+
+<li>
+  <i><font color="#888888">[Mar 2023]</font></i>&nbsp;&nbsp; Our <a href=#siggraph2023>paper</a> on fast complementary dynamics -- real-time secondary motions orthogonal to rig-induced deformation -- was accepted to <a href=https://s2023.siggraph.org>SIGGRAPH 2023</a> (journal track).
+</li>
+
+<li>
+  <i><font color="#888888">[Feb 2023]</font></i>&nbsp;&nbsp; Our <a href=#cvpr2023>paper</a> on unsupervised shape reconstruction by part retrieval and assembly was accepted to <a href=https://cvpr2023.thecvf.com>CVPR 2023</a>.
+</li>
+
+<li>
+  <i><font color="#888888">[Jan 2023]</font></i>&nbsp;&nbsp; I'm an awardee of the <a href=https://insaindia.res.in/scroll_news_pdf/Recipients-INSA-Young-Scientist-Award-2022.pdf>Indian National Science Academy's Medal for Young Scientists, 2022</a>. I'm grateful to the students, collaborators, and mentors who made our research possible.
+</li>
+
+<li>
+  <i><font color="#888888">[Jan 2023]</font></i>&nbsp;&nbsp; I will serve as an <a href=https://onlinelibrary.wiley.com/page/journal/14678659/homepage/editorialboard.html>Associate Editor</a> of <a href=https://onlinelibrary.wiley.com/journal/14678659>Computer Graphics Forum</a> (2023-2026).
+</li>
+
+<li>
+  <a href=news.html>More...</a>
+</li>
+
+</ul>
+
+
+<br>
+<h1>Publications</h1>
+
+<!--
+<h4><a id="preprints_msg" href="javascript:show_func()">Click here to show additional preprints</a></h4>
+<div id="preprints_div" style="display: none">
+<table>
+</table>
+</div>
+-->
+
+<table>
+
+<tr><td colspan=2><h1>2025</h1></td></tr>
+
+<tr>
+  <td id="tpami2025_metric"><img src=images/tpami2025_metric.jpg></td>
+  <td>Jan Bednarik, Noam Aigerman, Vladimir Kim, Siddhartha Chaudhuri, Shaifali Parashar, Mathieu Salzmann and Pascal Fua, "<i>Temporally-Coherent Surface Reconstruction using Metrically-Consistent Atlases</i>", <b>TPAMI</b>, 2025 (to appear). <i>(Expanded and updated version of our <a href=#iccv2021_metric>ICCV 2021 paper</a>.)</i>
+  <br>[<i>preprint coming soon</i>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2024</h1></td></tr>
+
+<tr>
+  <td id="eccv2024_decollage"><img src=images/eccv2024_decollage.jpg></td>
+  <td>Qimin Chen, Zhiqin Chen, Vladimir Kim, Noam Aigerman, Hao Zhang and Siddhartha Chaudhuri, "<i>DECOLLAGE: 3D Detailization by Controllable, Localized, and Learned Geometry Enhancement</i>", <b>ECCV</b>, 2024.
+  <br>[<a href=https://arxiv.org/abs/2409.06129>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="eccv2024_trj"><img src=images/eccv2024_trj.jpg></td>
+  <td>Sanjeev Muralikrishnan, Niladri Shekhar Dutt, Siddhartha Chaudhuri, Noam Aigerman, Vladimir Kim, Matthew Fisher and Niloy J. Mitra, "<i>Temporal Residual Jacobians for Rig-free Motion Transfer</i>", <b>ECCV</b>, 2024.
+  <br>[<a href=https://temporaljacobians.github.io>webpage</a>] [<a href=https://arxiv.org/abs/2407.14958>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2024"><img src=images/siggraph2024.jpg></td>
+  <td>Dmitry Petrov, Pradyumn Goyal, Vikas Thamizharasan, Vladimir Kim, Matheus Gadelha, Melinos Averkiou, Siddhartha Chaudhuri and Evangelos Kalogerakis, "<i>GEM3D: GEnerative Medial Abstractions for 3D Shape Synthesis</i>", <b>SIGGRAPH</b> conference track</b>, 2024.
+  <br>[<a href=https://lodurality.github.io/GEM3D>website</a>] [<a href=https://arxiv.org/abs/2402.16994>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="icml2024"><img src=images/icml2024.jpg></td>
+  <td>R. Kenny Jones, Siddhartha Chaudhuri and Daniel Ritchie, "<i>Learning to Infer Generative Template Programs for Visual Concepts</i>", <b>ICML</b>, 2024.
+  <br>[<a href=https://arxiv.org/abs/2403.15476>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2023</h1></td></tr>
+
+<tr>
+  <td id="sigasia2023"><img src=images/sigasia2023.jpg></td>
+  <td>Arman Maesumi, Paul Guerrero, Vladimir Kim, Matthew Fisher, Siddhartha Chaudhuri, Noam Aigerman and Daniel Ritchie, "<i>Explorable Mesh Deformation Subspaces from Unstructured 3D Generative Models</i>", <b>SIGGRAPH Asia</b> conference track, 2023.
+  <br>[<a href=https://arxiv.org/abs/2310.07814>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2023"><img src=images/siggraph2023.jpg></td>
+  <td>Otman Benchekroun, Jiayi Eris Zhang, Siddhartha Chaudhuri, Eitan Grinspun, Yi Zhou and Alec Jacobson, "<i>Fast Complementary Dynamics via Skinning Eigenmodes</i>", ACM Transactions on Graphics 42(4) (<b>SIGGRAPH<b> journal track), 2023.
+  <br>[<a href=https://arxiv.org/abs/2303.11886>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2023"><img src=images/cvpr2023.jpg></td>
+  <td>Xianghao Xu, Paul Guerrero, Matthew Fisher, Siddhartha Chaudhuri and Daniel Ritchie, "<i>Unsupervised 3D Shape Reconstruction by Part Retrieval and Assembly</i>", <b>CVPR</b>, 2023.
+  <br>[<a href=https://arxiv.org/abs/2303.01999>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2022</h1></td></tr>
+
+<tr>
+  <td id="eccv2022_patchrd"><img src=images/eccv2022_patchrd.jpg></td>
+  <td>Bo Sun, Vladimir Kim, Qixing Huang, Noam Aigerman and Siddhartha Chaudhuri, "<i>PatchRD: Detail-Preserving Shape Completion by Learning Patch Retrieval and Deformation</i>", <b>ECCV</b>, 2022.
+  <br>[<a href=https://arxiv.org/abs/2207.11790>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="eccv2022_slotmachine"><img src=images/eccv2022_slotmachine.jpg></td>
+  <td>Kai Wang, Paul Guerrero, Vladimir Kim, Siddhartha Chaudhuri, Minhyuk Sung and Daniel Ritchie, "<i>The Shape Part Slot Machine: Contact-based Reasoning for Generating 3D Shapes from Parts</i>", <b>ECCV</b>, 2022.
+  <br>[<a href=https://arxiv.org/abs/2112.00584>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2022"><img src=images/siggraph2022.jpg></td>
+  <td>Noam Aigerman, Kunal Gupta, Vladimir Kim, Siddhartha Chaudhuri, Jun Saito and Thibault Groueix, "<i>Neural Jacobian Fields: Learning Intrinsic Mappings of Arbitrary Meshes</i>", ACM Transactions on Graphics 41(4) (<b>SIGGRAPH</b> journal track), 2022.
+  <br>[<a href=https://arxiv.org/abs/2205.02904>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2022"><img src=images/cvpr2022.jpg></td>
+  <td>Sanjeev Muralikrishnan, Siddhartha Chaudhuri, Noam Aigerman, Vladimir Kim, Matthew Fisher and Niloy Mitra, "<i>GLASS: Geometric Latent Augmentation for Shape Spaces</i>", <b>CVPR</b>, 2022.
+  <br>[<a href=https://arxiv.org/abs/2108.03225>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2021</h1></td></tr>
+
+<tr>
+  <td id="tvcg2021"><img src=images/tvcg2021.jpg></td>
+  <td>Danyong Zhao, Yijing Li, Siddhartha Chaudhuri, Timothy Langlois and Jernej Barbic, "<i>ERGOBOSS: Ergonomic Optimization of Body-Supporting Surfaces</i>", <b>TVCG</b>, 2022 (to appear).
+  <br>[<a href=docs/tvcg2021_ergoboss.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="iccv2021_buildingnet"><img src=images/iccv2021_buildingnet.jpg></td>
+  <td>Pratheba Selvaraju, Mohamed Nabail, Marios Loizou, Maria Maslioukova, Melinos Averkiou, Siddhartha Chaudhuri and Evangelos Kalogerakis, "<i>BuildingNet: Learning to Label 3D Buildings</i>", <b>ICCV (oral)</b>, 2021.
+  <br>[<a href=https://buildingnet.org>website</a>] [<a href=docs/iccv2021_buildingnet.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="iccv2021_metric"><img src=images/iccv2021_metric.jpg></td>
+  <td>Jan Bednarik, Vladimir Kim, Siddhartha Chaudhuri, Shaifali Parashar, Mathieu Salzmann, Pascal Fua and Noam Aigerman, "<i>Temporally-Coherent Surface Reconstruction via Metric-Consistent Atlases</i>", <b>ICCV</b>, 2021.
+  <br>[<a href=docs/iccv2021_metric.pdf>preprint</a>] [<a href=https://youtu.be/jfNQPTsbM3g>video</a>] [<a href=https://arxiv.org/abs/2104.06950>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="ecmlpkdd2021"><img src=images/ecmlpkdd2021.jpg></td>
+  <td>Priyadarshini K, Siddhartha Chaudhuri, Vivek Borkar and Subhasis Chaudhuri, "<i>A Unified Batch Selection Policy for Active Metric Learning</i>", <b>ECML PKDD</b>, 2021.
+  <br>[<a href=docs/ecmlpkdd2021_unified.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2102.07365>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2021_decorgan"><img src=images/cvpr2021_decorgan2.jpg></td>
+  <td>Zhiqin Chen, Vladimir Kim, Matthew Fisher, Noam Aigerman, Hao (Richard) Zhang and Siddhartha Chaudhuri, "<i>DECOR-GAN: 3D Shape Detailization by Conditional Refinement</i>", <b>CVPR (oral)</b>, 2021.
+  <br>[<a href=docs/cvpr2021_decorgan.pdf>preprint</a>] [<a href=https://github.com/czq142857/DECOR-GAN>code and data</a>] [<a href=https://arxiv.org/abs/2012.09159>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2021_joint"><img src=images/cvpr2021_joint.jpg></td>
+  <td>Mikaela Angelina Uy, Vladimir Kim, Minhyuk Sung, Noam Aigerman, Siddhartha Chaudhuri and Leonidas Guibas, "<i>Joint Learning of 3D Shape Retrieval and Deformation</i>", <b>CVPR</b>, 2021.
+  <br>[<a href=https://joint-retrieval-deformation.github.io>website</a>] [<a href=docs/cvpr2021_joint.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2101.07889>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2020</h1></td></tr>
+
+<tr>
+  <td id="3dv2020_coalesce"><img src=images/3dv2020_coalesce.jpg></td>
+  <td>Kangxue Yin, Zhiqin Chen, Siddhartha Chaudhuri, Matthew Fisher, Vladimir Kim and Hao (Richard) Zhang, "<i>COALESCE: Component Assembly by Learning to Synthesize Connections</i>", <b>3DV (oral)</b>, 2020.
+  <br>[<a href=docs/3dv2020_coalesce.pdf>preprint</a>] [<a href=docs/3dv2020_coalesce_supp.pdf>supplementary</a>] [<a href=https://arxiv.org/abs/2008.01936>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="3dv2020_motion"><img src=images/3dv2020_motion.jpg></td>
+  <td>Xianghao Xu, David Charatan, Sonia Raychaudhuri, Hanxiao Jiang, Mae Heitmann, Vladimir Kim, Siddhartha Chaudhuri, Manolis Savva, Angel Chang and Daniel Ritchie, "<i>Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections</i>", <b>3DV</b>, 2020.
+  <br>[<a href=https://visual.cs.brown.edu/articulations>website</a>] [<a href=docs/3dv2020_articulations.pdf>preprint</a>] [<a href=https://youtu.be/OzcM-PCht0U>short video</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="eccv2020"><img src=images/eccv2020.jpg></td>
+  <td>Gopal Sharma, Difan Liu, Evangelos Kalogerakis, Subhransu Maji, Siddhartha Chaudhuri and Radomir Mech, "<i>ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds</i>", <b>ECCV</b>, 2020.
+  <br>[<a href=https://hippogriff.github.io/parsenet/>website</a>] [<a href=docs/eccv2020_parsenet.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2003.12181>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2020"><img src=images/siggraph2020.jpg></td>
+  <td>Hsueh-Ti (Derek) Liu, Vladimir Kim, Siddhartha Chaudhuri, Noam Aigerman and Alec Jacobson, "<i>Neural Subdivision</i>", ACM Transactions on Graphics 39(4) (<b>SIGGRAPH</b>), 2020.
+  <br>[<a href=https://www.dgp.toronto.edu/projects/neural-subdivision/>website</a>] [<a href=docs/siggraph2020_subdiv.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2005.01819>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="ijcai2020"><img src=images/ijcai2020.jpg></td>
+  <td>Priyadarshini K, Ritesh Goru, Siddhartha Chaudhuri and Subhasis Chaudhuri, "<i>Batch Decorrelation for Active Metric Learning</i>", <b>IJCAI-PRICAI</b>, 2020.
+  <br>[<a href=docs/ijcai2020_decorr.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2005.10008>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2020_cages"><img src=images/cvpr2020_cages.jpg></td>
+  <td>Wang Yifan, Noam Aigerman, Vladimir Kim, Siddhartha Chaudhuri and Olga Sorkine-Hornung, "<i>Neural Cages for Detail-Preserving 3D Deformations</i>", <b>CVPR (oral)</b>, 2020.
+  <br>[<a href=https://yifita.github.io/publication/deep_cage/>website</a>] [<a href=docs/cvpr2020_cages.pdf>preprint</a>] [<a href=docs/cvpr2020_cages_supp.pdf>supplementary</a>] [<a href=https://arxiv.org/abs/1912.06395>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2020_coseg"><img src=images/cvpr2020_coseg.jpg></td>
+  <td>Chenyang Zhu, Kai Xu, Siddhartha Chaudhuri, Li Yi, Leonidas Guibas and Hao (Richard) Zhang, "<i>AdaCoSeg: Adaptive Shape Co-Segmentation with Group Consistency Loss</i>", <b>CVPR (oral)</b>, 2020.
+  <br>[<a href=docs/cvpr2020_adacoseg.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1903.10297>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2020_affinity"><img src=images/cvpr2020_affinity.jpg></td>
+  <td>Chu Wang, Babak Samari, Vladimir Kim, Siddhartha Chaudhuri and Kaleem Siddiqi, "<i>Affinity Graph Supervision for Visual Recognition</i>", <b>CVPR</b>, 2020.
+  <br>[<a href=docs/cvpr2020_affinity.pdf>preprint</a>] [<a href=https://arxiv.org/abs/2003.09049>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="egstar2020"><img src=images/egstar2020.jpg></td>
+  <td>Siddhartha Chaudhuri, Daniel Ritchie, Jiajun Wu, Kai Xu and Hao (Richard) Zhang, "<i>Learning Generative Models of 3D Structures</i>", <b>Eurographics State-of-the-Art Reports (STAR)</b>, 2020.
+  <br>[<a href=docs/egstar2020_structgen.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2019</h1></td></tr>
+
+<tr>
+  <td id="iccv2019"><img src=images/iccv2019.jpg></td>
+  <td>Zhiqin Chen, Kangxue Yin, Matthew Fisher, Siddhartha Chaudhuri and Hao (Richard) Zhang, "<i>BAE-NET: Branched Autoencoder for Shape Co-Segmentation</i>", <b>ICCV</b>, 2019.
+  <br>[<a href=docs/iccv2019_baenet.pdf>preprint</a>] [<a href=docs/iccv2019_baenet_supp.pdf>supplementary</a>] [<a href=https://github.com/czq142857/BAE-NET>code and data</a>] [<a href=https://arxiv.org/abs/1903.11228>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="whc2019"><img src=images/whc2019.jpg></td>
+  <td>Priyadarshini K, Siddhartha Chaudhuri and Subhasis Chaudhuri, "<i>PerceptNet: Learning Perceptual Similarity of Haptic Textures in Presence of Unorderable Triplets</i>", World Haptics Conference (<b>WHC</b>), 2019.
+  <br>[<a href=docs/whc2019_perceptnet.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1905.03302>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2019"><img src=images/cvpr2019.jpg></td>
+  <td>Sanjeev Muralikrishnan, Vladimir Kim, Matthew Fisher and Siddhartha Chaudhuri, "<i>Shape Unicode: A Unified Shape Representation</i>", <b>CVPR</b>, 2019.
+  <br>[<a href=docs/cvpr2019_unicode.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="tog2019_grains"><img src=images/tog2019_grains.jpg></td>
+  <td>Manyi Li, Akshay Gadi Patil, Kai Xu, Siddhartha Chaudhuri, Owais Khan, Ariel Shamir, Changhe Tu, Baoquan Chen, Daniel Cohen-Or and Hao (Richard) Zhang, "<i>GRAINS: Generative Recursive Autoencoders for INdoor Scenes</i>", ACM Transactions on Graphics (<b>TOG</b>) 38(2), 2019.
+  <br>[<a href=https://manyili12345.github.io/Publication/2018/GRAINS/index.html>website</a>] [<a href=docs/tog2019_grains.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1807.09193>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2018</h1></td></tr>
+
+<tr>
+  <td id="sigasia2018"><img src=images/sigasia2018.jpg></td>
+  <td>Chenyang Zhu, Kai Xu, Siddhartha Chaudhuri, Renjiao Yi and Hao (Richard) Zhang, "<i>SCORES: Shape Composition with Recursive Substructure Priors</i>", ACM Transactions on Graphics 37(6) (<b>SIGGRAPH Asia</b>), 2018.
+  <br>[<a href=docs/sigasia2018_scores.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1809.05398>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="3dv2018"><img src=images/3dv2018.jpg></td>
+  <td>Hubert Lin, Melinos Averkiou, Evangelos Kalogerakis, Balazs Kovacs, Siddhant Ranade, Vladimir Kim, Siddhartha Chaudhuri and Kavita Bala, "<i>Learning Material-Aware Local Descriptors for 3D Shapes</i>", <b>3DV</b>, 2018.
+  <br>[<a href=docs/3dv2018_mattrans.pdf>preprint</a>] [<a href=docs/3dv2018_mattrans_supp.pdf>supplementary</a>] [<a href=docs/3dv2018_mattrans_data.txt>data</a>] [<a href=https://arxiv.org/abs/1810.08729>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2018"><img src=images/cvpr2018.jpg></td>
+  <td>Sanjeev Muralikrishnan, Vladimir Kim and Siddhartha Chaudhuri, "<i>Tags2Parts: Discovering Semantic Regions from Shape Tags</i>", <b>CVPR</b>, 2018.
+  <br>[<a href=projects/tags2parts/index.html>website</a>] [<a href=docs/cvpr2018_tags2parts.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1708.06673>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="iclr2018"><img src=images/iclr2018.jpg></td>
+  <td>Shiv Shankar, Vihari Piratla, Soumen Chakrabarti, Siddhartha Chaudhuri, Preethi Jyothi and Sunita Sarawagi, "<i>Generalizing Across Domains via Cross-Gradient Training</i>", <b>ICLR</b>, 2018.
+  <br>[<a href=docs/iclr2018_crossgrad.pdf>preprint</a>] [<a href=https://openreview.net/forum?id=r1Dx7fbCW>OpenReview</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="tog2018_lmvcnn"><img src=images/tog2018_lmvcnn.jpg></td>
+  <td>Haibin Huang, Evangelos Kalogerakis, Siddhartha Chaudhuri, Duygu Ceylan, Vladimir Kim and Ersin Yumer, "<i>Learning Local Shape Descriptors from Part Correspondences with Multi-view Convolutional Networks</i>", ACM Transactions on Graphics (<b>TOG</b>) 37(1), 2018.
+  <br>[<a href=http://people.cs.umass.edu/~hbhuang/local_mvcnn>website</a>] [<a href=docs/tog2018_lmvcnn.pdf>preprint</a>] [<a href=https://arxiv.org/abs/1706.04496>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2017</h1></td></tr>
+
+<tr>
+  <td id="sigasia2017"><img src=images/sigasia2017.jpg></td>
+  <td>Minhyuk Sung, Hao Su, Vladimir Kim, Siddhartha Chaudhuri and Leonidas Guibas, "<i>ComplementMe: Weakly-Supervised Component Suggestion for 3D Modeling</i>", ACM Transactions on Graphics 36(6) (<b>SIGGRAPH Asia</b>), 2017.
+  <br>[<a href=https://mhsung.github.io/papers/complement-me.html>website</a>] [<a href=docs/sigasia2017_complementme.pdf>preprint</a>] [<a href=https://www.eurekalert.org/pub_releases/2017-11/afcm-sad120417.php>press&nbsp;release</a>] [<a href=https://arxiv.org/abs/1708.01841>arXiv</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2017"><img src=images/siggraph2017.jpg></td>
+  <td>Jun Li, Kai Xu, Siddhartha Chaudhuri, Ersin Yumer, Hao (Richard) Zhang and Leonidas Guibas, "<i>GRASS: Generative Recursive Autoencoders for Shape Structures</i>", ACM Transactions on Graphics 36(4) (<b>SIGGRAPH</b>), 2017.
+  <br>[<a href=http://kevinkaixu.net/projects/grass.html>website</a>] [<a href=docs/siggraph2017_grass.pdf>preprint</a>] [<a href=https://www.eurekalert.org/pub_releases/2017-07/afcm-md3071817.php>press&nbsp;release</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="cvpr2017"><img src=images/cvpr2017.jpg></td>
+  <td>Evangelos Kalogerakis, Melinos Averkiou, Subhransu Maji and Siddhartha Chaudhuri, "<i>3D Shape Segmentation with Projective Convolutional Networks</i>", <b>CVPR (oral)</b>, 2017.
+  <br>[<a href=http://people.cs.umass.edu/~kalo/papers/shapepfcn>website</a>] [<a href=docs/cvpr2017_shapepfcn.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="arxiv2017_ebf"><img src=images/arxiv2017_ebf.jpg></td>
+  <td>Utkarsh Mall, G. Roshan Lal, Siddhartha Chaudhuri and Parag Chaudhuri, "<i>A Deep Recurrent Framework for Cleaning Motion Capture Data</i>", CoRR <i>(not peer-reviewed)</i>, 2017.
+  <br>[<a href=https://arxiv.org/abs/1712.03380>arXiv</a>]
+  </td>
+</tr>
+
+<tr><td colspan=2><h1>2016 and earlier</h1></td></tr>
+
+<tr>
+  <td id="sgp2016"><img src=images/sgp2016.jpg></td>
+  <td>Xuekun Guo, Juncong Lin, Kai Xu, Siddhartha Chaudhuri and Xiaogang Jin, "<i>CustomCut: On-demand Extraction of Customized 3D Parts with 2D Sketches</i>", Symposium on Geometry Processing (<b>SGP</b>), 2016.
+  <br>[<a href=docs/sgp2016_customcut.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2015"><img src=images/siggraph2015.jpg></td>
+  <td>Ersin Yumer, Siddhartha Chaudhuri, Jessica Hodgins and Levent Burak Kara, "<i>Semantic Shape Editing Using Deformation Handles</i>", ACM Transactions on Graphics 34(4) (<b>SIGGRAPH</b>), 2015.
+  <br>[<a href=docs/siggraph2015_sse.pdf>preprint</a>] [<a href=docs/siggraph2015_sse_supp.pdf>supplementary</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="sigasia2014"><img src=images/sigasia2014_3.jpg></td>
+  <td>Tianqiang Liu, Siddhartha Chaudhuri, Vladimir Kim, Qi-Xing Huang, Niloy Mitra and Thomas Funkhouser, "<i>Creating Consistent Scene Graphs Using a Probabilistic Grammar</i>", ACM Transactions on Graphics 33(6) (<b>SIGGRAPH Asia</b>), 2014.
+  <br>[<a href=http://gfx.cs.princeton.edu/pubs/Liu_2014_CCS/>website</a>] [<a href=docs/sigasia2014_hierarchy.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2014"><img src=images/siggraph2014_3.jpg></td>
+  <td>Vladimir Kim, Siddhartha Chaudhuri, Leonidas Guibas and Thomas Funkhouser, "<i>Shape2Pose: Human-Centric Shape Analysis</i>", ACM Transactions on Graphics 33(4) (<b>SIGGRAPH</b>), 2014.
+  <br>[<a href=http://www.vovakim.com/projects/Shape2Pose/>website</a>] [<a href=docs/siggraph2014_shape2pose.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="uist2013"><img src=images/uist2013_ranking.jpg></a></td>
+  <td>Siddhartha Chaudhuri, Evangelos Kalogerakis, Stephen Giguere and Thomas Funkhouser, "<i>AttribIt: Content Creation with Semantic Attributes</i>", <b>UIST</b>, 2013.
+  <br>[<a href=projects/attribit/index.html>website</a>] [<a href=docs/uist2013_semantic.pdf>preprint</a>] [<a href="https://www.dropbox.com/scl/fi/ydo4oyfh0lt4ssnl7sqk9/uist2013_AttribIt.mov?rlkey=woo0adn7abztvp9hsfijpau0y&st=h0uvny2o&dl=1">video&nbsp;(50&nbsp;MB)</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2013"><img src=images/siggraph2013.jpg></td>
+  <td>Vladimir Kim, Wilmot Li, Niloy Mitra, Siddhartha Chaudhuri, Stephen DiVerdi and Thomas Funkhouser, "<i>Learning Part-Based Templates from Large Collections of 3D Shapes</i>", ACM Transactions on Graphics 32(4) (<b>SIGGRAPH</b>), 2013.
+  <br>[<a href=http://www.vovakim.com/projects/CorrsTmplt/>website</a>] [<a href=docs/siggraph2013_template.pdf>preprint</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2012"><img src=images/siggraph2012.jpg></td>
+  <td>Evangelos Kalogerakis, Siddhartha Chaudhuri, Daphne Koller and Vladlen Koltun, "<i>A Probabilistic Model for Component-Based Shape Synthesis</i>", ACM Transactions on Graphics 31(4) (<b>SIGGRAPH</b>), 2012.
+  <br>[<a href=https://kalo-ai.github.io/papers/ShapeSynthesis/index.html>website</a>] [<a href=docs/siggraph2012_synthesis.pdf>preprint</a>] [<a href=https://www.youtube.com/watch?v=VcK2z6AOZcA>video&nbsp;(YouTube)</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="siggraph2011"><img src=images/siggraph2011.jpg></td>
+  <td>Siddhartha Chaudhuri, Evangelos Kalogerakis, Leonidas Guibas and Vladlen Koltun, "<i>Probabilistic Reasoning for Assembly-Based 3D Modeling</i>", ACM Transactions on Graphics 30(4) (<b>SIGGRAPH</b>), 2011.
+  <br>[<a href=projects/assembly/index.html>website</a>] [<a href=docs/siggraph2011_assembly.pdf>preprint</a>] [<a href="https://www.dropbox.com/scl/fi/w4we5d43mhw3dvd2ue7ce/siggraph2011_assembly.mov?rlkey=nhu4uji29s7kazsoe0k4k5gsv&st=h6a61d3x&dl=1">video&nbsp;(44&nbsp;MB)</a>]
+  </td>
+</tr>
+
+<tr>
+  <td id="sigasia2010"><img src=images/sigasia2010.jpg></td>
+  <td>Siddhartha Chaudhuri and Vladlen Koltun, "<i>Data-Driven Suggestions for Creativity Support in 3D Modeling</i>", ACM Transactions on Graphics 29(6) (<b>SIGGRAPH Asia</b>), 2010.
+  <br>[<a href=http://dx.doi.org/10.1145/1882261.1866205>journal</a>] [<a href=docs/sigasia2010_creativity.pdf>preprint</a>] [<a href="https://www.dropbox.com/scl/fi/y0dkiqzqyg58gorvplopv/sigasia2010_creativity.mov?rlkey=igw1s2ooxpt7frxokokimf8zo&st=13sf0lhl&dl=1">video&nbsp;(58&nbsp;MB)</a>]</td>
+</tr>
+
+<tr>
+  <td id="cgta2009"><img src=images/cgta2009.jpg></td>
+  <td>Siddhartha Chaudhuri and Vladlen Koltun, "<i>Smoothed Analysis of Probabilistic Roadmaps</i>", <b>Computational Geometry: Theory and Applications</b> 42(8), pp. 731-747, 2009.
+  <br>[<a href=http://dx.doi.org/10.1016/j.comgeo.2008.10.005>journal</a>] [<a href=docs/cgta2009.pdf>preprint</a>]</td>
+</tr>
+
+<tr>
+  <td id="rendering_tr2009"><img src=images/rendering_tr2009.jpg></td>
+  <td>Siddhartha Chaudhuri, Daniel Horn, Pat Hanrahan and Vladlen Koltun, "<i>Image-Based Exploration of Massive Online Environments</i>", Stanford University Computer Science Technical Report <i>(not peer-reviewed)</i>, CSTR 2009-02, 2009.
+  <br>[<a href=docs/rendering_tr2009.pdf>pdf</a>]</td>
+</tr>
+
+<tr>
+  <td id="spie2005"><img src=images/spie2005.jpg></td>
+  <td>Siddhartha Chaudhuri, Randhir K. Singh and Edoardo Charbon, "<i>Feature-Based Techniques for Real-Time Morphable Model Facial Image Analysis</i>", Image and Video Communications and Processing Conference, IS&amp;T/SPIE's 17th Annual Symposium on Electronic Imaging Science and Technology, San Jose, 2005.
+  <br>[<a href=docs/spie2005.pdf>pdf</a>] [<a href=docs/epfl2004.pdf>extended&nbsp;version</a>]</td>
+</tr>
+
+<tr>
+  <td id="wcnc2005"><img src=images/wcnc2005.jpg></td>
+  <td>Siddhartha Chaudhuri, Ratan K. Ghosh and Sajal K. Das, "<i>Towards Optimal Sensor Placement with Hypercube Cutting Planes</i>", IEEE Wireless Communications and Networking Conference <i>(invited paper)</i>, New Orleans, 2005.
+  <br>[<a href=docs/wcnc2005.pdf>pdf</a>] [<a href=docs/cs497_2004.pdf>extended&nbsp;version</a>]</td>
+</tr>
+
+<tr>
+  <td id="ncamr2004"><img src=images/ncamr2004.jpg></td>
+  <td>Manu Chhabra et al, "<i>Novel Approaches to Vision and Motion Control for Robot Soccer</i>", National Conference on Advanced Manufacturing and Robotics, CMERI, Durgapur, 2004.
+  <br>[<a href=docs/ncamr2004.pdf>pdf</a>]</td>
+</tr>
+
+</table>
+
+
+<br>
+<h1>Teaching</h1>
+
+<ul>
+  <li><a href=http://www.cse.iitb.ac.in/~cs749/spr2017>CS749: Digital Geometry Processing</a> (Instructor, Spring '17, IIT Bombay)</li>
+  <li><a href=http://www.cse.iitb.ac.in/~cs475/fall2016>CS475/675: Computer Graphics</a> (Instructor, Fall '16, IIT Bombay)</li>
+  <li><a href=http://www.cse.iitb.ac.in/~cs749/spr2016>CS749: Digital Geometry Processing</a> (Instructor, Spring '16, IIT Bombay)</li>
+  <li><a href=http://www.cs.cornell.edu/courses/cs2800/2015sp>CS2800: Discrete Structures</a> (Instructor, Spring '15, Cornell)</li>
+  <li><a href=http://www.cs.cornell.edu/courses/cs2110/2015sp>CS2110: Object-Oriented Programming and Data Structures</a> (Instructor, Spring '15, Cornell)</li>
+  <li><a href=http://www.cs.cornell.edu/courses/cs2800/2014fa>CS2800: Discrete Structures</a> (Instructor, Fall '14, Cornell)</li>
+  <li><a href=http://www.cs.princeton.edu/courses/archive/spring14/cos426/>COS426: Computer Graphics</a> (Preceptor, Spring '14, Princeton)</li>
+  <li><a href=http://www.cs.princeton.edu/courses/archive/spring13/cos436/>COS436: Human-Computer Interface Technology</a> (Guest Lecturer: "Data-Driven Design", Spring '13, Princeton)</li>
+  <li><a href=http://www.cs.princeton.edu/courses/archive/spring13/cos126/info.html>COS126: General Computer Science</a> (Preceptor, Spring '13, Princeton)</li>
+  <li><a href=http://graphics.stanford.edu/wikis/cs248-12-winter/>CS248: Interactive Computer Graphics</a> (Guest Lecturer: "Rendering Large Environments in Real Time", Winter '12, Stanford)</li>
+  <li><a href=http://graphics.stanford.edu/wikis/cs248-11-winter/>CS248: Interactive Computer Graphics</a> (Guest Lecturer: "Rendering Large Environments in Real Time", Winter '11, Stanford)</li>
+  <li><a href=http://graphics.stanford.edu/courses/cs208-11-spring/>CS208: Canon of Computer Science</a> (Course Assistant, Spring '11, Stanford)</li>
+  <li><a href=http://graphics.stanford.edu/courses/cs148-10-summer/>CS148: Introduction to Computer Graphics</a> (Instructor, Summer '10, Stanford)</li>
+  <li><a href=http://graphics.stanford.edu/courses/cs208-10-spring/>CS208: Canon of Computer Science</a> (Course Assistant, Spring '10, Stanford)</li>
+  <li>CS103X: Discrete Structures (accelerated) (Course Assistant, Winter '07, Stanford)</li>
+</ul>
+
+
+<br>
+<h1>Code</h1>
+<br>
+<p>I wrote and maintain <a href=https://sidch.github.io/Thea><b>Thea</b></a>, a freely available, BSD-licensed library of C++ classes for computer graphics, primarily for 3D geometry processing (not to be confused with the concurrently developed Thea Render, which I am not connected with). It is the core library I use for nearly all my research projects, and it is also the core library for <a href=https://en.wikipedia.org/wiki/Adobe_Fuse_CC>Adobe Fuse</a>, which I originally authored.</p>
+
+
+<br>
+<h1>Links</h1>
+
+<ul>
+  <li><a href=http://besurbetal.wordpress.com>Music blog (Hindustani classical)</a></li>
+  <li><a href=http://www.flickr.com/photos/wasteland/sets>Photos</a></li>
+</ul>
+
+<br><br>
+
+</div>
+
+</body>
+
+</html>

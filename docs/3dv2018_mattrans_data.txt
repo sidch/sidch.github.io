@@ -1,0 +1,25 @@
+Please send us an email if you have any questions.
+
+### CROWDSOURCED DATA [ShapeNet] ###
+
+== obj and label files ==
+!! Use *_fixed.* files !!
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/trainset.tar.gz
+
+== sampled points + renderings + view files ==
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/trainset_150pts.zip
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/trainset_render_views_150_clean.7z
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/trainset_renderings_150_clean.7z
+
+== parts labelled statistics ==
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/shapelist_greater_than_50%25.txt
+https://s3.us-east-2.amazonaws.com/mattrans-data/Crowdsourced+Training+Data/sorted_meshes_according_to_percentage_group_labeled.txt
+
+### BENCHMARK DATA [IKEA / Hermann-Miller] ###
+
+== obj and label files ==
+https://s3.us-east-2.amazonaws.com/mattrans-data/Expert+Benchmark+Data/benchmark-new-oct8.zip
+
+== sampled points + renderings + view files ==
+https://s3.us-east-2.amazonaws.com/mattrans-data/Expert+Benchmark+Data/benchmark-new_render_views_5000pts.7z
+https://s3.us-east-2.amazonaws.com/mattrans-data/Expert+Benchmark+Data/benchmark-new_render_views_5000pts.7z
